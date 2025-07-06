@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameer Rathor - Graphics Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Custom Colors from the image */
+        .bg-brand-dark-green { background-color: #2F3D30; }
+        .text-brand-dark-green { color: #2F3D30; }
+        .bg-brand-yellow { background-color: #FFC200; }
+        .text-brand-yellow { color: #FFC200; }
+        .border-brand-yellow { border-color: #FFC200; }
+
+        .hero-bg-pattern {
+            background-image: radial-gradient(#FFC200 1px, transparent 1px);
+            background-size: 10px 10px;
+            position: absolute;
+            inset: 0;
+            opacity: 0.1;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: #FFC200;
+            margin-top: 8px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .testimonial-card {
+            background-color: #3a4c3b;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-brand-dark-green">Sameer.</a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="hover:text-brand-yellow transition-colors">About</a>
+                <a href="#services" class="hover:text-brand-yellow transition-colors">Services</a>
+                <a href="#works" class="hover:text-brand-yellow transition-colors">Works</a>
+                <a href="#contact" class="hover:text-brand-yellow transition-colors">Contact</a>
+            </nav>
+            <a href="https://api.whatsapp.com/send?phone=919981009241" target="_blank" class="hidden md:inline-block bg-brand-yellow text-brand-dark-green font-bold px-6 py-2 rounded-full hover:opacity-90 transition-opacity">Let's Talk</a>
+            <button class="md:hidden text-brand-dark-green">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-brand-dark-green text-white py-20 relative overflow-hidden">
+            <div class="hero-bg-pattern"></div>
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4">Sameer Rathor</h1>
+                <p class="text-xl text-brand-yellow mb-6">Graphics Designer</p>
+                <p class="mb-8 max-w-2xl mx-auto">I'm a passionate graphic designer turning ideas into eye-catching visuals — from bold branding to scroll-stopping social media creatives.</p>
+                <!-- <div class="flex justify-center space-x-4 mb-12">
+                    <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-brand-yellow hover:text-brand-dark-green transition-colors"><i class="fab fa-dribbble"></i></a>
+                    <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-brand-yellow hover:text-brand-dark-green transition-colors"><i class="fab fa-behance"></i></a>
+                    <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-brand-yellow hover:text-brand-dark-green transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                </div> -->
+                <!-- Stats -->
+                <div class="flex flex-wrap justify-center gap-8 md:gap-16 bg-white/10 backdrop-blur-sm p-6 rounded-lg max-w-lg mx-auto">
+                    <div class="text-center">
+                        <p class="text-4xl font-bold text-brand-yellow">2+</p>
+                        <p class="text-sm">Years Experience</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-4xl font-bold text-brand-yellow">50+</p>
+                        <p class="text-sm">Projects Done</p>
+                    </div>
+                    <!-- <div class="text-center">
+                        <p class="text-3xl font-bold text-brand-yellow">45+</p>
+                        <p class="text-sm">Happy Clients</p>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6 text-left">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-3xl font-bold section-title mb-6 text-center">About me</h2>
+                    <p class="text-gray-600 mb-4">
+                    <strong>Hi, I’m Sameer Rathor</strong>, a creative graphic designer with one year of hands-on experience in crafting visually compelling designs across digital and print media. I specialize in:
+                    <ul class="list-disc list-inside text-left max-w-md  my-4">
+                        <li>Branding &amp; Logo Design</li>
+                        <li>Social Media Creatives</li>
+                        <li>Posters &amp; Brochures</li>
+                        <li>Packaging Design</li>
+                        <li>Print Ads &amp; Editorials</li>
+                    </ul>
+                    <span>
+                        I believe great design is not just about looking good — it’s about communicating clearly, emotionally, and effectively. With every project, I bring a fresh perspective and deep attention to detail.
+                    </span>
+                    <br>
+                    <span>
+                        Let’s bring your vision to life through design.
+                    </span>
+                    </p>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold section-title inline-block mb-12">What I Do</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="text-4xl text-brand-yellow mb-4"><i class="fas fa-palette"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Logo Design</h3>
+                        <p class="text-gray-600">Crafting memorable brand identities that stand out and speak for themselves.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="text-4xl text-brand-yellow mb-4"><i class="fas fa-desktop"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Social Media Creatives</h3>
+                        <p class="text-gray-600">Thumb-stopping posts, carousels & stories tailored for engagement and impact.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="text-4xl text-brand-yellow mb-4"><i class="fas fa-mobile-alt"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Print Design</h3>
+                        <p class="text-gray-600">Brochures, flyers, posters, newspaper ads — I design for clarity and conversion.</p>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="text-4xl text-brand-yellow mb-4"><i class="fas fa-pen-ruler"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Packaging Design</h3>
+                        <p class="text-gray-600">Designs that make your product shine on shelves and in hearts.</p>
+                    </div>
+                    <!-- Service Card 5 -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="text-4xl text-brand-yellow mb-4"><i class="fas fa-lightbulb"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Branding</h3>
+                        <p class="text-gray-600">Developing strong brand identities that resonate with audiences.</p>
+                    </div>
+                    <!-- Service Card 6 -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="text-4xl text-brand-yellow mb-4"><i class="fas fa-search"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Visual Content Creation</h3>
+                        <p class="text-gray-600">Custom illustrations, icons, and brand graphics for consistent storytelling.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Works Section -->
+        <section id="works" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold section-title inline-block mb-12 mx-auto text-center w-full">My Recent Works</h2>
+                <div id="work-gallery" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Backdrop: Image Gallery -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="gallery" 
+                         data-title="Backdrop"
+                         data-images='[
+                            "./assets/backdrop/Mockup BackDrop 01.jpg",
+                            "./assets/backdrop/Mockup BackDrop 02.jpg",
+                            "./assets/backdrop/SCREEN_BACKDROPS_02.jpg"
+                         ]'>
+                        <img loading="lazy" src="./assets/backdrop/BACKDOP.jpg" alt="Backdrop" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <!-- banner: Image Gallery -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="gallery" 
+                         data-title="Banner"
+                         data-images='[
+                            "./assets/banner/DOSHI_HONDA_NEW_6X3_FT.jpg",
+                            "./assets/banner/JEE_ADVANCED_BANNER.jpg",
+                            "./assets/banner/SANAN_FOAM_BANNER-01.jpg"
+                         ]'>
+                        <img loading="lazy" src="./assets/banner/SANAN_FOAM_BANNER-01.jpg" alt="Banner" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <!-- Book Cover: Image Gallery -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="gallery" 
+                         data-title="Book Cover"
+                         data-images='[
+                            "./assets/bookcover/BOOK_COVER_NEW-01.jpg",
+                            "./assets/bookcover/BOOK_COVER_NEW-03.jpg",
+                            "./assets/bookcover/mock .jpg",
+                            "./assets/bookcover/MOCK_1.jpg"
+                         ]'>
+                        <img loading="lazy" src="./assets/bookcover/MOCK_1.jpg" alt="Book Cover" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <!-- Booklet: Image Gallery -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/booklet/BLUE BELLS_REPORT CARD.pdf"
+                         data-title="Fitness Website Case Study">
+                        <img loading="lazy" src="./assets/booklet/thumbnail.png" alt="Booklet" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <!-- Brochure -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="gallery" 
+                         data-title="Brochure"
+                         data-images='[
+                            "./assets/brochure/COVER_BACK.jpg",
+                            "./assets/brochure/INNER_PAGE.jpg"
+                         ]'>
+                        <img loading="lazy" src="./assets/brochure/COVER_BACK.jpg" alt="Brochure" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <!-- BROCHURE -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                          data-type="pdf" 
+                         data-pdf-src="./assets/brochure/MU_BROCHURE_2024.pdf"
+                         data-title="Fitness Website Case Study">
+                        <img loading="lazy" src="./assets/brochure/thumb1.png" alt="BROCHURE" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <!-- BROCHURE -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                          data-type="pdf" 
+                         data-pdf-src="./assets/brochure/SMALL BROCHURE.pdf"
+                         data-title="Parents Manual">
+                        <img loading="lazy" src="./assets/brochure/thumb2.png" alt="BROCHURE" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <!-- diary -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                          data-type="pdf" 
+                         data-pdf-src="./assets/diary/DIARY.pdf"
+                         data-title="Fitness Website Case Study">
+                        <img loading="lazy" src="./assets/diary/thumbnail1.png" alt="diary" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <!-- diary -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                          data-type="pdf" 
+                         data-pdf-src="./assets/diary/MOUNT_INDEX_DIARY.pdf"
+                         data-title="Fitness Website Case Study">
+                        <img loading="lazy" src="./assets/diary/thumbnail2.png" alt="diary" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <!-- Envelope -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="gallery" 
+                         data-title="Envelope"
+                         data-images='[
+                           "./assets/envelope/MOCKUP.jpg"
+                         ]'>
+                        <img loading="lazy" src="./assets/envelope/MOCKUP.jpg" alt="Envelope" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                     <!-- FORM -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                          data-type="pdf" 
+                         data-pdf-src="./assets/form/BLUBELLS_FORM.pdf"
+                         data-title="Form">
+                        <img loading="lazy" src="./assets/form/thumb1.png" alt="form" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                     <!-- hoarding -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="gallery" 
+                         data-title="Hoarding"
+                         data-images='[
+                           "./assets/hoarding/HOARDING.jpg"
+                         ]'>
+                        <img loading="lazy" src="./assets/hoarding/HOARDING.jpg" alt="hoarding" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                     <!-- idcard -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="gallery" 
+                         data-title="ID Card"
+                         data-images='[
+                           "./assets/idcard/ID_CARD_MOCKUP.jpg",
+                           "./assets/idcard/PV_ID_CARD-01.jpg"
+                         ]'>
+                        <img loading="lazy" src="./assets/idcard/ID_CARD_MOCKUP.jpg" alt="ID Card" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                     <!-- invitation -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="gallery" 
+                         data-title="INVITATION"
+                         data-images='[
+                           "./assets/invitation/ALUMNI_MEET_2025_INVITATION.jpg",
+                           "./assets/invitation/WOMENS_DAY_INVITATIONS.jpg"
+                         ]'>
+                        <img loading="lazy" src="./assets/invitation/ALUMNI_MEET_2025_INVITATION.jpg" alt="INVITATION" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                     <!-- leaflet -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="gallery" 
+                         data-title="leaflet"
+                         data-images='[
+                           "./assets/leaflet/FIELD_FORENSIC_LEAFLET_2025_COVER.jpg",
+                           "./assets/leaflet/FIELD_FORENSIC_LEAFLET_2025_INNER.jpg"
+                         ]'>
+                        <img loading="lazy" src="./assets/leaflet/MOCKUP.jpg" alt="INVITATION" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <!-- leaflet: PDF -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets//leaflet/AUROUS_RESULT_LEAFLET.pdf"
+                         data-title="LEAFLET">
+                        <img loading="lazy" src="./assets//leaflet/aurous.png" alt="Fitness Website Project PDF" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <!-- leaflet: PDF -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/leaflet/FIELD_FORENSIC_LEAFLET_2025.pdf"
+                         data-title="LEAFLET">
+                        <img loading="lazy" src="./assets//leaflet/field.png" alt="Fitness Website Project PDF" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <!-- leaflet: PDF -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets//leaflet/IJH_LEAFLET_A4.pdf"
+                         data-title="LEAFLET">
+                        <img loading="lazy" src="./assets/leaflet/ijh.png" alt="Fitness Website Project PDF" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <!-- leaflet: PDF -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/leaflet/KALINDI GREENS_LEAFLET.pdf"
+                         data-title="Fitness Website Case Study">
+                        <img loading="lazy" src="./assets/leaflet/kalindi.png" alt="Fitness Website Project PDF" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <!-- leaflet: PDF -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/leaflet/THE Orchard_LEAFLET.pdf"
+                         data-title="Fitness Website Case Study">
+                        <img loading="lazy" src="./assets/leaflet/orchard.png" alt="Fitness Website Project PDF" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                     <!-- letterhead -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="gallery" 
+                         data-title="letterhead"
+                         data-images='[
+                           "./assets/letterhead/FINGROW LETTERHEAD.jpg",
+                           "./assets/letterhead/LETTERHEAD.jpg",
+                           "./assets/letterhead/Untitled-1.jpg"
+                         ]'>
+                        <img loading="lazy" src="./assets/letterhead/LETTERHEAD.jpg" alt="INVITATION" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                     <!-- logo -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="gallery" 
+                         data-title="logo"
+                         data-images='[
+                           "./assets/logo/AUROUS_DIGITAL_LOGO.png",
+                           "./assets/logo/H&J_LOGO.jpg",
+                           "./assets/logo/SARTHAK_ENTERPRISES_LOGO.png"
+                         ]'>
+                        <img loading="lazy" src="./assets/logo/AUROUS_DIGITAL_LOGO.png" alt="INVITATION" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                     <!-- newspaper -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="gallery" 
+                         data-title="newspaper"
+                         data-images='[
+                           "./assets/newspaper/1.jpg",
+                           "./assets/newspaper/2.jpg",
+                           "./assets/newspaper/3.jpg",
+                           "./assets/newspaper/4.jpg",
+                           "./assets/newspaper/5.jpg",
+                           "./assets/newspaper/6.jpg",
+                           "./assets/newspaper/7.jpg",
+                           "./assets/newspaper/8.jpg",
+                           "./assets/newspaper/9.jpg",
+                           "./assets/newspaper/10.jpg"
+                         ]'>
+                        <img loading="lazy" src="./assets/newspaper/1.jpg" alt="newspaper" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                     <!-- packaging -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="gallery" 
+                         data-title="packaging"
+                         data-images='[
+                           "./assets/packaging/1.png",
+                           "./assets/packaging/2.jpg",
+                           "./assets/packaging/3.jpg",
+                           "./assets/packaging/4.jpg",
+                           "./assets/packaging/5.jpg"
+                         ]'>
+                        <img loading="lazy" src="./assets/packaging/1.png" alt="packaging" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                     <!-- poster -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="gallery" 
+                         data-title="poster"
+                         data-images='[
+                           "./assets/poster/1.jpg",
+                           "./assets/poster/2.jpg",
+                           "./assets/poster/3.jpg"
+                         ]'>
+                        <img loading="lazy" src="./assets/poster/1.jpg" alt="poster" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                     <!-- socialmedia -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="gallery" 
+                         data-title="socialmedia"
+                         data-images='[
+                           "./assets/socialmedia/1.jpg",
+                           "./assets/socialmedia/2.jpg",
+                           "./assets/socialmedia/3.jpg",
+                           "./assets/socialmedia/4.jpg",
+                           "./assets/socialmedia/5.jpg",
+                           "./assets/socialmedia/6.jpg",
+                           "./assets/socialmedia/7.jpg",
+                           "./assets/socialmedia/8.jpg",
+                           "./assets/socialmedia/9.jpg",
+                           "./assets/socialmedia/10.jpg",
+                           "./assets/socialmedia/11.jpg",
+                           "./assets/socialmedia/12.jpg",
+                           "./assets/socialmedia/13.jpg",
+                           "./assets/socialmedia/14.jpg",
+                           "./assets/socialmedia/15.jpg",
+                           "./assets/socialmedia/16.jpg",
+                           "./assets/socialmedia/17.jpg",
+                           "./assets/socialmedia/18.jpg",
+                           "./assets/socialmedia/19.jpg",
+                           "./assets/socialmedia/20.jpg",
+                           "./assets/socialmedia/21.jpg",
+                           "./assets/socialmedia/22.jpg",
+                           "./assets/socialmedia/23.jpg",
+                           "./assets/socialmedia/24.jpg",
+                           "./assets/socialmedia/25.jpg",
+                           "./assets/socialmedia/26.jpg",
+                           "./assets/socialmedia/27.jpg",
+                           "./assets/socialmedia/28.jpg",
+                           "./assets/socialmedia/29.jpg",
+                           "./assets/socialmedia/30.jpg",
+                           "./assets/socialmedia/31.jpg",
+                           "./assets/socialmedia/32.jpg",
+                           "./assets/socialmedia/33.jpg",
+                           "./assets/socialmedia/34.jpg"
+                         ]'>
+                        <img loading="lazy" src="./assets/socialmedia/1.jpg" alt="socialmedia" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                     <!-- stall -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="gallery" 
+                         data-title="stall"
+                         data-images='[
+                           "./assets/stall/1.jpg",
+                           "./assets/stall/2.jpg",
+                           "./assets/stall/3.jpg",
+                           "./assets/stall/4.jpg",
+                           "./assets/stall/5.jpg",
+                           "./assets/stall/6.jpg",
+                           "./assets/stall/7.jpg",
+                           "./assets/stall/8.jpg"
+                         ]'>
+                        <img loading="lazy" src="./assets/stall/1.jpg" alt="stall" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                     <!-- standee -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="gallery" 
+                         data-title="standee"
+                         data-images='[
+                           "./assets/standee/1.jpg",
+                           "./assets/standee/2.jpg",
+                           "./assets/standee/3.jpg",
+                           "./assets/standee/4.jpg",
+                           "./assets/standee/5.jpg",
+                           "./assets/standee/6.jpg",
+                           "./assets/standee/7.jpg",
+                           "./assets/standee/8.jpg",
+                           "./assets/standee/9.jpg",
+                           "./assets/standee/10.jpg",
+                           "./assets/standee/11.jpg",
+                           "./assets/standee/12.jpg",
+                           "./assets/standee/13.jpg",
+                           "./assets/standee/14.jpg",
+                           "./assets/standee/15.jpg",
+                           "./assets/standee/16.jpg",
+                           "./assets/standee/17.jpg",
+                           "./assets/standee/18.jpg",
+                           "./assets/standee/19.jpg"
+                         ]'>
+                        <img loading="lazy" src="./assets/standee/1.jpg" alt="standee" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                     <!-- Tentcard -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="gallery" 
+                         data-title="tentcard"
+                         data-images='[
+                           "./assets/tentcard/1.jpg",
+                           "./assets/tentcard/2.jpg",
+                           "./assets/tentcard/3.jpg",
+                           "./assets/tentcard/4.jpg"
+                         ]'>
+                        <img loading="lazy" src="./assets/tentcard/2.jpg" alt="tentcard" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                     <!-- visitingcard -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="gallery" 
+                         data-title="visitingcard"
+                         data-images='[
+                           "./assets/visitingcard/1.jpg",
+                           "./assets/visitingcard/2.jpg",
+                           "./assets/visitingcard/3.jpg",
+                           "./assets/visitingcard/4.jpg"
+                         ]'>
+                        <img loading="lazy" src="./assets/visitingcard/2.jpg" alt="visitingcard" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+
+                       <!-- ppt: PDF -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/ppt/1.pdf"
+                         data-title="PPT1">
+                        <img loading="lazy" src="./assets/ppt/1.png" alt="PPT1" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/ppt/2.pdf"
+                         data-title="PPT2">
+                        <img loading="lazy" src="./assets/ppt/2.png" alt="PPT2" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/ppt/3.pdf"
+                         data-title="PPT3">
+                        <img loading="lazy" src="./assets/ppt/3.png" alt="PPT3" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/ppt/4.pdf"
+                         data-title="PPT4">
+                        <img loading="lazy" src="./assets/ppt/4.png" alt="PPT4" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/ppt/5.pdf"
+                         data-title="PPT5">
+                        <img loading="lazy" src="./assets/ppt/5.png" alt="PPT5" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/ppt/6.pdf"
+                         data-title="PPT6">
+                        <img loading="lazy" src="./assets/ppt/6.png" alt="PPT6" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/ppt/7.pdf"
+                         data-title="PPT7">
+                        <img loading="lazy" src="./assets/ppt/7.png" alt="PPT7" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/ppt/8.pdf"
+                         data-title="PPT8">
+                        <img loading="lazy" src="./assets/ppt/8.png" alt="PPT8" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/ppt/9.pdf"
+                         data-title="PPT9">
+                        <img loading="lazy" src="./assets/ppt/9.png" alt="PPT9" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/ppt/10.pdf"
+                         data-title="PPT10">
+                        <img loading="lazy" src="./assets/ppt/10.png" alt="PPT10" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/ppt/11.pdf"
+                         data-title="PPT11">
+                        <img loading="lazy" src="./assets/ppt/11.png" alt="PPT11" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/ppt/12.pdf"
+                         data-title="PPT12">
+                        <img loading="lazy" src="./assets/ppt/12.png" alt="PPT12" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/ppt/13.pdf"
+                         data-title="PPT13">
+                        <img loading="lazy" src="./assets/ppt/13.png" alt="PPT13" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/ppt/14.pdf"
+                         data-title="PPT14">
+                        <img loading="lazy" src="./assets/ppt/14.png" alt="PPT14" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/ppt/15.pdf"
+                         data-title="PPT15">
+                        <img loading="lazy" src="./assets/ppt/15.png" alt="PPT15" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/ppt/16.pdf"
+                         data-title="PPT16">
+                        <img loading="lazy" src="./assets/ppt/16.png" alt="PPT16" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/ppt/16.pdf"
+                         data-title="PPT16">
+                        <img loading="lazy" src="./assets/ppt/16.png" alt="PPT16" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/ppt/17.pdf"
+                         data-title="PPT17">
+                        <img loading="lazy" src="./assets/ppt/17.png" alt="PPT17" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer" 
+                         data-type="pdf" 
+                         data-pdf-src="./assets/ppt/18.pdf"
+                         data-title="PPT18">
+                        <img loading="lazy" src="./assets/ppt/18.png" alt="PPT18" class="w-full  object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                 
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold section-title inline-block mb-4">Let's Connect</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-8">
+                    Have a project in mind? I would love to hear from you. Let's create something amazing together.
+                </p>
+                <a href="https://api.whatsapp.com/send?phone=919981009241" target="_blank" class="inline-block bg-brand-yellow text-brand-dark-green font-bold px-10 py-4 rounded-full hover:opacity-90 transition-opacity text-lg">
+                   +91 99810 09241
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark-green text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="mb-4 md:mb-0">&copy; 2025 Sameer Rathor. All rights reserved.</p>
+                <p class="mb-4 text-center md:mb-0">Designed and developed with &hearts; by Pradeep Nayak.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-brand-yellow transition-colors"><i class="fab fa-dribbble"></i></a>
+                    <a href="#" class="hover:text-brand-yellow transition-colors"><i class="fab fa-behance"></i></a>
+                    <a href="#" class="hover:text-brand-yellow transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="hover:text-brand-yellow transition-colors"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Full-screen Modal -->
+    <div id="gallery-modal" class="hidden fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg shadow-2xl w-full max-w-6xl max-h-[90vh] flex flex-col">
+            <!-- Modal Header -->
+            <div class="flex justify-between items-center p-4 border-b border-gray-200">
+                <h3 id="modal-title" class="text-2xl font-bold text-brand-dark-green">Project Title</h3>
+                <button id="modal-close-btn" class="text-gray-500 hover:text-red-500 transition-colors">
+                    <i class="fas fa-times fa-2x"></i>
+                </button>
+            </div>
+            <!-- Modal Body -->
+            <div id="modal-grid" class="p-6 overflow-y-auto">
+                <!-- Image grid will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const workGallery = document.getElementById('work-gallery');
+            const modal = document.getElementById('gallery-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalGrid = document.getElementById('modal-grid');
+            const closeModalBtn = document.getElementById('modal-close-btn');
+
+            // Function to open the modal
+            const openModal = (title, images) => {
+                modalTitle.textContent = title;
+                modalGrid.innerHTML = ''; // Clear previous images
+
+                // Create and append images to the grid
+                const gridContainer = document.createElement('div');
+                gridContainer.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4';
+                
+                images.forEach(src => {
+                    const img = document.createElement('img');
+                    img.src = src;
+                    img.alt = title;
+                    img.loading = 'lazy';
+                    img.className = 'w-full h-auto rounded-lg shadow-md';
+                    gridContainer.appendChild(img);
+                });
+                modalGrid.appendChild(gridContainer);
+                
+                modal.classList.remove('hidden');
+                document.body.classList.add('modal-open');
+            };
+
+            // Function to close the modal
+            const closeModal = () => {
+                modal.classList.add('hidden');
+                document.body.classList.remove('modal-open');
+                modalGrid.innerHTML = ''; // Clean up grid
+            };
+
+            // Event listener for project cards
+            workGallery.addEventListener('click', (e) => {
+                const card = e.target.closest('.project-card');
+                if (!card) return;
+
+                const type = card.dataset.type;
+                const title = card.dataset.title;
+
+                if (type === 'pdf') {
+                    const pdfSrc = card.dataset.pdfSrc;
+                    if(pdfSrc) {
+                        window.open(pdfSrc, '_blank');
+                    }
+                } else if (type === 'gallery') {
+                    try {
+                        const images = JSON.parse(card.dataset.images);
+                        if(images && images.length > 0) {
+                            openModal(title, images);
+                        }
+                    } catch (error) {
+                        console.error("Error parsing image data:", error);
+                    }
+                }
+            });
+
+            // Event listeners for closing the modal
+            closeModalBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', (e) => {
+                // Close if clicked on the background overlay
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                    closeModal();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
